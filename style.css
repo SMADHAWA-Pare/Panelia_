@@ -73,6 +73,56 @@ nav input {
   object-fit: cover;
 }
 
+.populer {
+  padding: 20px 40px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.page {
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.page.active {
+  background: #6a00ff;
+}
+
+.page:hover {
+  background: #4b00cc;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .card img {
+    height: 180px;
+  }
+
 footer {
   text-align: center;
   padding: 20px;
